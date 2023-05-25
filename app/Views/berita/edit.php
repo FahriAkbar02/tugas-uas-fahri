@@ -91,8 +91,8 @@
             <input type="text" value="<?= $post['judul']; ?>" placeholder="Masukan Judul Berita ..." name="judul" />
         </div>
         <div class="form-control">
-            <label for="konten">Tanggal</label>
-            <input type="text" value="<?= $post['konten']; ?>" placeholder="Masukan Tanggal Kejadian ..." name="konten" />
+            <label for="konten">Isi Berita</label>
+            <input type="text" value="<?= $post['konten']; ?>" placeholder="Masukan Isi Berita ..." name="konten" />
         </div>
         <div class="form-control">
             <label for="foto">Gambar</label>

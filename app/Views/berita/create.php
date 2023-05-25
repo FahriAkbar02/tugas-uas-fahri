@@ -79,15 +79,15 @@
     <?= csrf_field(); ?>
         <div class="form-control">
             <label>
-                Berita
+                Judul Berita
             </label>
             <input type="text" placeholder="Masukan Judul Berita ..." name="judul" />
         </div>
         <div class="form-control">
             <label>
-                Tanggal
+                Isi Berita
             </label>
-            <input type="text" placeholder="Masukan Tanggal Kejadian ..." name="konten" />
+            <input type="text" placeholder="Masukan Isi Berita ..." name="konten" />
         </div>
         <div class="form-control">
             <label>
