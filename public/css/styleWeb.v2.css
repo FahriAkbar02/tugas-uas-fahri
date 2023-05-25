@@ -1,0 +1,568 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  
+}
+.head{
+width: 100%;
+height: 50%;
+}
+.logo img{
+float: left;
+width:100%;
+}
+.navbar {
+width: 100%;
+max-width: 100%;
+height: 50%;
+overflow: hidden;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#home{
+background-color: #07486d;
+color: rgb(255, 255, 255);
+border-radius: 3px;
+}
+.navbar a{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+float: left;
+font-size: 15px;
+font-weight: bold;
+color: rgb(0, 0, 0);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color:#acacac;
+}
+.dropdown {
+float: left;
+overflow: hidden;
+}
+.dropdown .dropbtn {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn ,.dropbtn:focus {
+background-color: #07486d;
+color: #ffffff;
+border-radius: 3px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+float: left;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(92, 92, 92, 0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+background-color: #003d55;
+color: rgb(255, 255, 255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:#acacac;
+color: #000;
+box-shadow: 0px 8px 16px 0px rgb(14, 49, 90);
+
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.footer {
+  padding-top: 100px;
+position: relative;
+box-shadow: 0 0 40px rgba(0,0,0,.1) inset;
+background-color: #222222;
+margin: 0 auto;
+font-size: 95%;
+padding: 5px 0;
+border-top: 1px solid #3D3D3D;
+ 
+}
+.copy{
+margin: 0 auto;
+}
+.router {
+position: relative;
+max-width: 1500px;
+width: 100%;
+margin: 0 auto;
+padding: 0;
+}
+.copyright {
+float: none;
+margin: 0;
+color: #ECFFF1;
+text-align: center;
+padding: 8px 0;
+line-height: 1;
+font-size: 15px;
+}
+.design{
+  float: none;
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  color: #ECFFF1;
+  text-align: center;
+  padding: 8px 0;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+h1{
+text-align: center;
+font-size: 25px;
+}
+h1,h2,h4{
+font-family:sans-serif;
+}
+
+p{
+font-size: 15px;
+font-style: inherit;
+font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+.slidcss{
+width: 100%;
+height: 500px;
+box-sizing: border-box; -webkit-box-sizing: border-box; 
+}
+
+.bodySlid {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+ height: 100%;
+ margin: 0; font: 16px/1.3 sans-serif; 
+}
+.nomSlid {
+position: relative;
+overflow: hidden;
+width: 100%;
+
+}
+
+.nomSlid .slidFoto {
+width: 100%;
+white-space: nowrap;
+font-size: 0;
+transition: 0.8s;
+}
+
+.nomSlid .slidFoto > * {
+font-size: 1rem;
+display: inline-block;
+white-space: normal;
+vertical-align: top;
+height: 500px;
+width: 100%;
+background: none 50% no-repeat;
+background-size: cover;
+}
+.nomSlid .buttonNext {
+position: absolute;
+z-index: 1;
+top: 50%;
+width: 100%;
+height: 0;
+}
+
+.nomSlid .buttonNext > div+div {
+visibility: hidden; /* Hide all but first P/N container */
+}
+
+.nomSlid .buttonNext a {
+background: #ffffff;
+position: absolute;
+width:       60px;
+height:      60px;
+line-height: 60px; /* If you want to place numbers */
+text-align: center;
+opacity: 0.7;
+-webkit-transition: 0.3s;
+        transition: 0.3s;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+left: 0;
+}
+.nomSlid .buttonNext a:hover {
+opacity: 1;
+}
+.nomSlid .buttonNext a+a {
+left: auto;
+right: 0;
+}
+
+.nomSlid .noBulet {
+position: absolute;
+z-index: 2;
+bottom: 0;
+padding: 10px 0;
+width: 100%;
+text-align: center;
+}
+.nomSlid .noBulet > a {
+display: inline-block;
+width:       30px;
+height:      30px;
+line-height: 30px;
+text-decoration: none;
+text-align: center;
+background: rgba(255, 255, 255, 1);
+-webkit-transition: 0.3s;
+        transition: 0.3s;
+}
+.nomSlid .noBulet > a+a {
+background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.nomSlid .noBulet > a:hover {
+background: rgb(255, 255, 255) !important;
+}
+.nomSlid >s:target ~ .noBulet >* { 
+  background: rgba(255, 255, 255, 0.5);
+}
+/* ACTIVE */
+#s1:target ~ .noBulet >*:nth-child(1) {background: rgb(255, 255, 255);}
+#s2:target ~ .noBulet >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .noBulet >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .noBulet >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+.nomSlid >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .buttonNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .buttonNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .buttonNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .buttonNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slidFoto {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slidFoto {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slidFoto {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slidFoto {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+.nomSlid{
+color: #fff;	
+text-align: center;
+}
+.nomSlid .slidFoto h2 {
+margin-top: 33vh;
+font-weight: 200;
+letter-spacing: -0.06em;
+word-spacing: 0.2em;
+font-size: 3em;
+text-shadow: 1px 2px #00000098;
+}
+.nomSlid a {
+border-radius: 50%;
+margin: 0 3px;
+color: rgba(0,0,0,0.8);
+text-decoration: none;
+}
+
+.tulisan_login{
+text-align: left;
+margin-left: 30px;
+margin-bottom: 10px;
+font-size: 30px;
+color: rgb(0, 0, 0);
+font-weight: 500;
+line-height: 2;
+color: inherit;
+border-bottom: 1px solid #eee; ;
+
+}
+
+.kotak_login{
+border-radius: 3px;
+position: relative;
+width: 50%;
+margin: 1% 20% 3% 25%;
+margin-top: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+background-color: rgb(255, 255, 255);
+}
+.form1{
+margin-top: 20px;
+font-style: inherit;
+background-color: #2d3c42;
+position: relative;
+width: 90%;
+padding: 0% 5% 5% 5%;
+}
+label{
+width: 100%;
+font-size: 15px;
+color: white; 
+}
+
+.form_login{
+box-sizing : border-box;
+width: 100%;
+font-size: 11pt;
+}
+.login{
+color: #fff;
+background-color: #337ab7;
+font-size: 18px;
+margin-top: 50px;
+}
+.kembali{
+font-size: 18px;
+color: #333;
+background-color: #fff;
+border: none;
+border-radius: 3px;
+padding: 10px 20px;
+text-align: center;
+align-items: center;
+cursor: pointer;
+}
+input {
+border: none;
+border-radius: 3px;
+padding: 10px 20px;
+text-align: center;
+align-items: center;
+cursor: pointer;
+}
+.kembali:hover{
+color: #333;
+background-color: #ccc;
+}
+.login:hover{
+color: #ffffff;
+background-color: #2e6da4;
+
+
+}
+.link:hover {
+   background-color: #9b9b9b;
+}
+
+.alert{
+background: #ff0000be;
+color: white;
+padding: 10px;
+text-align: center;
+}
+.artikel{
+font-style: inherit;
+font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+padding: 5% 10% 6% 10%;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.artikel h4{
+font-family:sans-serif;
+font-size: 19px;
+
+}
+.title h1{
+margin-top: 5%;
+}
+
+.artikel h2 , .peraturan h2{
+margin: 15px 20px;
+}
+.artikel p , .peraturan p ,.SOP p{
+margin-top: 30px;
+margin: 20px 20px;
+}
+.visi h2 ,.misi h2{
+font-size: 25px;
+
+}
+.visi ul li p{
+  font-size: 19px;
+}
+.visi ul li{
+  margin-left: 10%;
+
+}
+.visi ,.misi , .form h4{
+margin: 20px 20px;
+
+}
+.SOP {
+position: relative;
+margin-top: 20px;
+width: 100%;
+
+}
+.SOP h5 {
+padding: 3% 5% 3% 5%;
+margin-top: 10px;
+font-size: 15px;
+}
+.SOP img , .SOP6 img , .kadin img {
+position: relative;
+width: 90%;
+margin-top: 20px;
+margin-left: 5%;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.SOP6 h5{
+padding-top: 10px;
+font-size: 20px;
+text-align: center;
+}
+.SOP6 {
+position: relative;
+margin-top: 10px;
+width: 100%;
+}
+.SOP6 p{
+text-align: center;
+}
+.kadin{
+margin-top: 30px;
+text-align: center;
+font-size: 30px;
+}
+/* Berita */
+#myInput {
+  text-align:"left";
+  margin-top: 40px;
+  width: 92%;
+  font-size: 16px;
+  border: 1px solid #000000;
+  margin-bottom: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myUL {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 20%;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#myUL li a p {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block
+}
+.list {
+  margin-top: 20px;
+  position: relative;
+  list-style: none;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 200px;
+  display: flex;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+.ket , .tgl , .lihat , .update , .hapus{
+  padding-top: 15px;
+}
+.Gambar{
+  height: 150px;
+  width: 25%;
+  padding: 0px;
+  margin-right: 10px;
+}
+.Gambar img{
+  height: 150px;
+  padding: 0px 0px ;
+}
+.ket a{
+  width: 450px;
+  height: 185px;
+  max-width:max-content;
+  min-width: 150px;
+}
+.tgl p{
+
+  width:80px;
+  height: 150px;
+  max-width: 80px;
+  min-width: 80px;
+} 
+.lihat p{
+  width: 37px;
+  height: 150px;
+  max-width: 37px;
+  min-width: 37px;
+}
+.update p{
+  width: 56px;
+  height: 150px;
+  max-width: 56px;
+  min-width: 56px;
+}
+.hapus p{
+  background-color: #2e6da4;
+  width: 46px;
+  height: 150px;
+  max-width: 46px;
+  min-width: 46px;
+}
+.buttSur a{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: left;
+  font-size: 15px;
+  margin: 10px 0px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 10px 16px;
+  background-color:#acacac;
+  border-radius: 3px;
+
+  }
+  .buttSur a:hover{
+    background-color: #07486d;
+    color: #ffffff;
+    border-radius: 3px;
+    }
+th{
+  background-color: darkgray;
+  height: 20px;
+}
+table  {
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 18px;
+  border: 1px solid black;
+  width: 100%;
+}
+th, td{
+  padding: 0px 10px;
+}
+th {
+  font-style: inherit;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+table  tr{
+  border-bottom: 1px;
+}
