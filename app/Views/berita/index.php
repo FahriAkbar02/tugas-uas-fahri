@@ -70,7 +70,7 @@
     <div class="container">
         <div class="head">
             <div class="logo">
-                <img src="gambar/Logo.png" />
+                <img src="../../gambar/Logo.png" />
             </div>
         </div>
 
